@@ -230,9 +230,7 @@
 
 ;; 210:
 ;; with-gen: TODO
-(defmacro with-gen [& _args]
-  (binding [*out* *err*]
-    (prn "WARNING: spartan.spec doesn't have with-gen yet" (assoc (meta &form) :file *file*))))
+(defmacro with-gen [& _args])
 
 (defn explain* [spec path via in x]
   (let [{explain-f :explain} spec]
